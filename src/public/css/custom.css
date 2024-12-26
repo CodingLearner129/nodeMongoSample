@@ -1,0 +1,58 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#chat-container {
+    width: 100%;
+    height: 400px;
+    overflow: scroll;
+    background-color: floralwhite;
+}
+
+#message {
+    width: 80%;
+}
+
+.chat-section {
+    display: none;
+}
+
+.receiver_list {
+    height: 400px;
+}
+
+.time {
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+}
+
+#actionBar{
+    background-color: #fff3dc;
+    z-index: 1;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fa{
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------------- group ----------------------------------------------------------- */
+
+#group_message {
+    width: 80%;
+}
+
+.group-chat-section {
+    display: none;
+}
+
+#group-chat-container {
+    width: 100%;
+    height: 400px;
+    overflow: scroll;
+    background-color: floralwhite;
+}
+
+.user_name {
+    font-size: 0.8rem !important;
+}
