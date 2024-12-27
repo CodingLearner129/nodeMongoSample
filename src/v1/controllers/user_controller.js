@@ -8,6 +8,7 @@ export const getUser = async (req, res) => {
     try {
         // const result = await db.user.findOne({ _id: new mongoose.Types.ObjectId(req.body.id) });
         const result = await db.user.findOne({ _id: new mongoose.Types.ObjectId(req.params.id) }); // testing 24 char hex string C3707D6737FDBE565CF8F680
+        // await transaction.commitTransaction();
         res.send({
             status: 1,
             message: "User found successfully.",
