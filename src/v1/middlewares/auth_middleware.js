@@ -35,7 +35,6 @@ export const authenticationMiddleware = async (req, res, next) => {
             }
         }
     } catch (error) {
-        logMessage(error, req);
         return res.send({
             status: 0,
             message: "Your session has expired. Please sign in again.",
