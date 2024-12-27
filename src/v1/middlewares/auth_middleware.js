@@ -1,5 +1,4 @@
 import { verifyToken } from "./../services/auth_service.js";
-import { logMessage } from "./../helpers/logger.js";
 import db from "../config/db.js";
 
 export const authenticationMiddleware = async (req, res, next) => {
