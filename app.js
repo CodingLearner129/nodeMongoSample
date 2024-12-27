@@ -14,6 +14,8 @@ const app = express();
 // Development logging
 app.use(morgan('dev'));
 
+app.use(express.json());
+
 // serving static files
 app.use(express.static(path.join(__dirname, './src/public')));
 
