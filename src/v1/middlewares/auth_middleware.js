@@ -11,7 +11,7 @@ export const authenticationMiddleware = async (req, res, next) => {
             });
         } else {
             const decoded = await verifyToken(token);
-            const getModel = await db.findOne({ _id: decoded.id, token: token });
+            const getModel = await db.user.findOne({ _id: decoded.id, token: token });
             if (getModel != null) {
                 if (getModel.blocked_at > 0) {
                     return res.send({
